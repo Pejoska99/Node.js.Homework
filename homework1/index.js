@@ -10,6 +10,7 @@
 // 6. Read the file contents and print them out in the console.
 
 // - Don't forget to add a .gitignore file in your project as always.
+import { editUser } from './usersService.js';
 
 import fs from 'fs';
 import path from 'path';
@@ -49,5 +50,13 @@ fs.readFile(fileName, 'utf8',function(err,data){
         return
     }
     console.log("The file has been read successfully",data);
-})
+});
+
+editUser(5, {name: 'Nikola', username: 'niki', password: '1234'});
+editUser(1, {name: 'Biljana', username: 'Pejoska', password: '8978'});
+
+
+
+
+
 
