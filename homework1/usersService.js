@@ -24,7 +24,24 @@ export function editUser(id, userObject){
 
         fs.writeFileSync('users.json', JSON.stringify(usersExisting));
     }
-
-
    
+}
+
+// function deleteUser(id){
+//     const usersExisting = readUsersFromFile();
+//     const deleteUser = usersExisting.filter
+// }
+
+export function deleteUser(id){
+    editUser(id,{});
+    const usersExisting=readUsersFromFile();
+    const deletedUsers =usersExisting.filter(user=>user.id !==id);
+    fs.writeFileSync('users.json', JSON.stringify(deletedUsers));
+
+}
+
+export function deleteAll(){
+    readUsersFromFile([]);
+    fs.writeFileSync('users.json', JSON.stringify([]));
+
 }
