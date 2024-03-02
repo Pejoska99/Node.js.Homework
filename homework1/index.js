@@ -13,6 +13,8 @@
 import { editUser } from './usersService.js';
 import { deleteUser } from './usersService.js';
 import {deleteAll}from './usersService.js';
+import {addUser} from './usersService.js';
+
 
 
 
@@ -61,7 +63,25 @@ fs.readFile(fileName, 'utf8',function(err,data){
 editUser(5, {name: 'Nikola', username: 'niki', password: '1234'});
 editUser(1, {name: 'Biljana', username: 'Pejoska', password: '8978'});
 
-deleteUser(2);
-deleteUser(4);
+// deleteUser(2);
+// deleteUser(4);
 
 // deleteAll();
+
+const userToAdd = [{
+    
+    name: "John Doe",
+    username: "johnDoe",
+    password: "johndoe@user.net"
+},
+{
+    name: "Sime",
+    username: "simepejoski",
+    password: "jdoe@7898"
+
+}]
+
+
+
+
+addUser(userToAdd);

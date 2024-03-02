@@ -51,3 +51,33 @@ export function deleteAll(){
     console.log("All users deleted successfully.")
 
 }
+
+const getLastUserId = ()=>{
+    const usersExisting = readUsersFromFile();
+    return usersExisting[usersExisting.length-1].id;
+    
+}
+export function addUser (user) {
+    const usersExisting = readUsersFromFile();
+    console.log(user);
+    const newId = getLastUserId() +1;
+    const newUser= {
+        id: newId,
+        name: user.name,
+        username: user.username,
+        password: user.password
+    }
+    usersExisting.push(newUser);
+    
+    const updatedUsersJSON = JSON.stringify(usersExisting);
+    fs.writeFileSync('users.json',updatedUsersJSON);
+    console.log('Additional user added to the users.json file');
+    
+}
+
+
+
+
+
+
+
