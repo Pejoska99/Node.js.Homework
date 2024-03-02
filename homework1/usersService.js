@@ -23,6 +23,7 @@ export function editUser(id, userObject){
         selctedUser.password = userObject.password;
 
         fs.writeFileSync('users.json', JSON.stringify(usersExisting));
+        console.log(`User with ID ${id} edited successfully.`);
     }
    
 }
@@ -33,15 +34,17 @@ export function editUser(id, userObject){
 // }
 
 export function deleteUser(id){
-    editUser(id,{});
+    // editUser(id,{});
     const usersExisting=readUsersFromFile();
     const deletedUsers =usersExisting.filter(user=>user.id !==id);
     fs.writeFileSync('users.json', JSON.stringify(deletedUsers));
+    console.log(`User with ID ${id} deleted successfully.`);
 
 }
 
 export function deleteAll(){
     readUsersFromFile([]);
     fs.writeFileSync('users.json', JSON.stringify([]));
+    console.log("All users deleted successfully.")
 
 }
