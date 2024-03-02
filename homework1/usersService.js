@@ -8,12 +8,15 @@
 import fs from 'fs';
 const readUsersFromFile = () => {
     const usersExisting = fs.readFileSync('users.json', 'utf8');
+    console.log("Users from file:", usersExisting);
     return JSON.parse(usersExisting);
 };
+
 export function editUser(id, userObject){
     const usersExisting = readUsersFromFile();
     const selctedUser = usersExisting.find(user => user.id === id);
     if(!selctedUser){
+        console.log(`User with ID ${id} not found.`);
         return;
 
     }
@@ -34,7 +37,7 @@ export function editUser(id, userObject){
 // }
 
 export function deleteUser(id){
-    // editUser(id,{});
+     editUser(id,{});
     const usersExisting=readUsersFromFile();
     const deletedUsers =usersExisting.filter(user=>user.id !==id);
     fs.writeFileSync('users.json', JSON.stringify(deletedUsers));

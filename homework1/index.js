@@ -15,6 +15,7 @@ import { deleteUser } from './usersService.js';
 import {deleteAll}from './usersService.js';
 
 
+
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -63,10 +64,4 @@ editUser(1, {name: 'Biljana', username: 'Pejoska', password: '8978'});
 deleteUser(2);
 deleteUser(4);
 
-deleteAll();
-
-
-
-
-
-
+// deleteAll();
