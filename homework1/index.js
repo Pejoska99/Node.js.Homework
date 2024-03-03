@@ -10,12 +10,7 @@
 // 6. Read the file contents and print them out in the console.
 
 // - Don't forget to add a .gitignore file in your project as always.
-import { editUser } from './usersService.js';
-import { deleteUser } from './usersService.js';
-import {deleteAll}from './usersService.js';
-import {addUser} from './usersService.js';
-
-
+import { editUser, deleteUser,deleteAll,addUser } from './usersService.js';
 
 
 import fs from 'fs';
