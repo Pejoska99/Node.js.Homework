@@ -10,16 +10,21 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-const projectUrl = import.meta.url;
-// console.log("url to project path", projectUrl);
-const projectPath = path.dirname(fileURLToPath(projectUrl));
-// console.log('path', projectPath);
+// const projectUrl = import.meta.url;
+// // console.log("url to project path", projectUrl);
+// const projectPath = path.dirname(fileURLToPath(projectUrl));
+// // console.log('path', projectPath);
 
-// const directoryName = path.basename(projectPath);
-// console.log('DIRECTORY NAME', directoryName);
+// // const directoryName = path.basename(projectPath);
+// // console.log('DIRECTORY NAME', directoryName);
 
-const fileName = "note.txt";
-const text ="Hello World"
+// const fileName = "note.txt";
+// const text ="Hello World"
+
+const textFileUrl = import.meta.url;
+const _dirname = path.dirname(fileURLToPath(textFileUrl))
+const fileName = path.join(_dirname,"note.txt");
+const text = "Hello there!!!"
 
 fs.writeFile(fileName, text, function(err){
     if(err){
@@ -29,7 +34,7 @@ fs.writeFile(fileName, text, function(err){
     console.log("The text has been written successfully");
 })
 
-const textToAppend ="Hello there Again";
+const textToAppend ="Hello there Again!!!";
 fs.appendFile(fileName,textToAppend, function(err){
     if(err){
         console.log("Error while appending to file", err);
