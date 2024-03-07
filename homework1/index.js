@@ -67,8 +67,8 @@ fs.readFile(filePath, 'utf8',function(err,data){
     console.log("The file has been read successfully",data);
 });
 
-editUser(5, {name: 'Nikola', username: 'niki', password: '1234'});
-editUser(1, {name: 'Biljana', username: 'Pejoska', password: '8978'});
+
+
 
 // deleteUser(2);
 // deleteUser(4);
@@ -86,9 +86,15 @@ const userToAdd = [{
     username: "simepejoski",
     password: "jdoe@7898"
 
-}]
+},
 
-
+]
 
 
 addUser(userToAdd);
+
+for (const user of userToAdd) {
+    addUser(user);
+}
+
+

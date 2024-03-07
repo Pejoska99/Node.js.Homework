@@ -52,14 +52,24 @@ export function deleteAll(){
 
 }
 
-const getLastUserId = ()=>{
+const getLastUserId = () => {
     const usersExisting = readUsersFromFile();
-    return usersExisting[usersExisting.length-1].id;
-    
+    if (usersExisting.length === 0) {
+        return 0;
+    }
+   
+    const completeUsers = usersExisting.filter(user => user.hasOwnProperty('id'));
+    if (completeUsers.length === 0) {
+        return 0;
+    }
+    return completeUsers[completeUsers.length - 1].id;
 }
+
+
+
 export function addUser (user) {
     const usersExisting = readUsersFromFile();
-    console.log(user);
+    // console.log(user);
     const newId = getLastUserId() +1;
     const newUser= {
         id: newId,
@@ -74,6 +84,8 @@ export function addUser (user) {
     console.log('Additional user added to the users.json file');
     
 }
+
+
 
 
 
