@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import {
     getTrainers,
     addTrainer,
@@ -66,6 +66,17 @@ router.delete("/trainers", (req, res) => {
     }catch {
         res.status(500).send(error.message);
     }
-})
+});
+
+router.patch("/trainers/:id", (req, res) => {
+    const trainerId = req.params.id;
+    try {
+        const updatedTrainer = updateTrainer(trainerId, req.body);
+        res.json(updatedTrainer);
+    } catch (error) {
+        res.status(404).send(error.message);
+    }
+});
+
 
 export { router };
