@@ -1,22 +1,3 @@
-// import fs from 'fs';
-// import path from 'path';
-// import { fileURLToPath } from 'url';
-
-// const currentFileUrl = import.meta.url;
-// const currentFilePath = fileURLToPath(currentFileUrl);
-// const projectPath = path.dirname(currentFilePath);
-
-// const trainersPath = path.join(projectPath, "..", "trainers.json");
-
-// export const getTrainers= () => {
-
-//     const trainers = fs.readFileSync(trainersPath, 'utf8');
-//     return JSON.parse(trainers);
-
-
-// }
-
-
 
 import fs from 'fs';
 import path from 'path';
@@ -52,13 +33,13 @@ export const getTrainers = (queryData) => {
 // }
 
 if(queryData.isCurrentlyTeaching === 'true') {
-    updateTrainer = updateTrainer.filter(trainer => trainer.isCurrentlyTeaching === queryData.isCurrentlyTeaching);
+    updatedTrainers = updatedTrainers.filter(trainer => trainer.isCurrentlyTeaching === true);
 }
 if(queryData.sortBy === 'coursesAsc'){
-    updateTrainer = updateTrainer.sort((a,b)=> a.coursesFinished - b.coursesFinished);
+    updatedTrainers = updatedTrainers.sort((a,b)=> a.coursesFinished - b.coursesFinished);
 }
 
-return updateTrainer
+return updatedTrainers
 }
 const saveTrainersData = (trainers) => {
     fs.writeFileSync(trainersPath, JSON.stringify(trainers, null, 2), 'utf8');
