@@ -5,6 +5,7 @@ import {
     getTrainerById,
     updateTrainer,
     deleteTrainer,
+    deleteAllTrainers,
 } from "../service/trainers.service.js";
 
 const router = express.Router();
@@ -57,5 +58,14 @@ router.delete("/trainers/:id", (req, res) => {
         res.status(404).send(error.message);
     }
 });
+
+router.delete("/trainers", (req, res) => {
+    try{
+        deleteAllTrainers();
+        res.sendStatus(204);
+    }catch {
+        res.status(500).send(error.message);
+    }
+})
 
 export { router };

@@ -1,21 +1,12 @@
 [
   {
-    "id": "1",
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john@example.com",
-    "isCurrentlyTeaching": true,
-    "timeEmployed": "6 months",
-    "coursesFinished": 3
-  },
-  {
     "id": "2",
-    "firstName": "Nikola",
-    "lastName": "Pejoskai",
-    "email": "ni@test.com",
+    "firstName": "Kiki updated ",
+    "lastName": "Pejoski updated",
+    "email": "test@test.com",
     "isCurrentlyTeaching": true,
-    "timeEmployed": "2 months",
-    "coursesFinished": 3
+    "timeEmployed": "3 months",
+    "coursesFinished": 5
   },
   {
     "id": "2",
