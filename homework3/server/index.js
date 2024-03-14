@@ -16,10 +16,15 @@ const projectPath = path.dirname(currentFilePath);
 
 const staticPagePublic = path.join(projectPath, "public");
 
+
 app.use("/api", trainersRouter);
 app.use("/public", express.static(staticPagePublic));
+
 app.get("/home", (req, res) => {
-    res.sendFile(__dirname + "/public/index.html");
+    res.sendFile(path.join(staticPagePublic, "index.html"));
+});
+app.get("/home/image.jpeg",(req, res)=> {
+   res.sendFile(path.join(staticPagePublic, "image.jpeg"));
 });
 
 app.listen(PORT, () => {

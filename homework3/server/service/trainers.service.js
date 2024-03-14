@@ -29,6 +29,8 @@ const projectPath = path.dirname(currentFilePath);
 
 const trainersPath = path.join(projectPath, "..", "trainers.json");
 
+
+
 export const getTrainers = (queryData) => {
     const trainers = JSON.parse(fs.readFileSync(trainersPath, 'utf8'));
 
@@ -38,17 +40,26 @@ export const getTrainers = (queryData) => {
 
     let updatedTrainers = [...trainers];
 
-    if (queryData.isCurrentlyTeaching !== undefined) {
-        updatedTrainers = updatedTrainers.filter(trainer => trainer.isCurrentlyTeaching === queryData.isCurrentlyTeaching);
-    }
+//     if (queryData.isCurrentlyTeaching !== undefined) {
+//         updatedTrainers = updatedTrainers.filter(trainer => trainer.isCurrentlyTeaching === queryData.isCurrentlyTeaching);
+//     }
 
-    if (queryData.coursesFinished !== undefined) {
-        updatedTrainers = updatedTrainers.filter(trainer => trainer.coursesFinished === queryData.coursesFinished);
-    }
+//     if (queryData.coursesFinished !== undefined) {
+//         updatedTrainers = updatedTrainers.filter(trainer => trainer.coursesFinished === queryData.coursesFinished);
+//     }
 
-    return updatedTrainers;
+//     return updatedTrainers;
+// }
+
+if(queryData.isCurrentlyTeaching === 'true') {
+    updateTrainer = updateTrainer.filter(trainer => trainer.isCurrentlyTeaching === queryData.isCurrentlyTeaching);
+}
+if(queryData.sortBy === 'coursesAsc'){
+    updateTrainer = updateTrainer.sort((a,b)=> a.coursesFinished - b.coursesFinished);
 }
 
+return updateTrainer
+}
 const saveTrainersData = (trainers) => {
     fs.writeFileSync(trainersPath, JSON.stringify(trainers, null, 2), 'utf8');
 }
