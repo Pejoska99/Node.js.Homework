@@ -1,0 +1,92 @@
+[
+  {
+    "id": "b1157d16-c4f6-4922-8582-03b0d2764438",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "1 year",
+    "coursesFinished": 3
+  },
+  {
+    "id": "e76d92ad-2b6a-4a81-8949-5475af723385",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "isCurrentlyTeaching": false,
+    "timeEmployed": "2 years",
+    "coursesFinished": 5
+  },
+  {
+    "id": "83230cb7-0ba9-426c-8c20-42c7f95466d2",
+    "firstName": "Sime",
+    "lastName": "Pejoski",
+    "email": "sime@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "9 months",
+    "coursesFinished": 6
+  },
+  {
+    "id": "7523b33c-eff0-405f-a646-cf0d0d2647ec",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "8 months",
+    "coursesFinished": 4
+  },
+  {
+    "id": "fa39f9da-22fc-41ff-ba8e-ebf456eef1f4",
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "email": "michael@example.com",
+    "isCurrentlyTeaching": false,
+    "timeEmployed": "6 months",
+    "coursesFinished": 2
+  },
+  {
+    "id": "d4cb95c9-b89d-47fc-b8f5-7f94418a4c53",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "10 months",
+    "coursesFinished": 7
+  },
+  {
+    "id": "a1911fe3-ebc2-4e7c-9c59-4d16de06fe1f",
+    "firstName": "James",
+    "lastName": "Wilson",
+    "email": "james@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "3 months",
+    "coursesFinished": 1
+  },
+  {
+    "id": "7be8c0da-0ab5-475b-a8e3-2e4a4462db92",
+    "firstName": "Sophia",
+    "lastName": "Miller",
+    "email": "sophia@example.com",
+    "isCurrentlyTeaching": false,
+    "timeEmployed": "5 months",
+    "coursesFinished": 1
+  },
+  {
+    "id": "17f6a9fd-79a0-4cd6-9212-428d2034a13b",
+    "firstName": "William",
+    "lastName": "Davis",
+    "email": "william@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "11 months",
+    "coursesFinished": 9
+  },
+  {
+    "id": "163d8327-af63-4d14-aa9b-d40805b31745",
+    "firstName": "Olivia",
+    "lastName": "Garcia Гарсиа",
+    "email": "olivia@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "9 months",
+    "coursesFinished": 10
+  }
+]
