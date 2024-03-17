@@ -1,6 +1,7 @@
 import DataService from "../services/data.service.js";
 import path from "path";
 import { fileURLToPath } from "url";
+import { v4 as uuidv4 } from "uuid";
 
 const currentFileUrl = import.meta.url;
 const currentFilePath = fileURLToPath(currentFileUrl); 
@@ -64,41 +65,3 @@ export default class TrainerModel {
     }
 }
 
-//     static async addTrainer(newTrainerData) {
-//         const trainers = await this.getTrainers();
-//         const newTrainer = {
-//             ...newTrainerData,
-//             id: uuidv4(),
-//         };
-//         const updatedTrainers = [...trainers, newTrainer];
-//         await DataService.saveData(trainersPath, updatedTrainers);
-//         return newTrainer;
-//     }
-
-//     static async getTrainerById(trainerId) {
-//         const trainers = await this.getTrainers();
-//         return trainers.find(trainer => trainer.id === trainerId);
-//     }
-
-//     static async updateTrainer(trainerId, trainerData) {
-//         const trainers = await this.getTrainers();
-//         const index = trainers.findIndex(trainer => trainer.id === trainerId);
-//         if (index === -1) {
-//             throw new Error("Trainer not found");
-//         }
-//         trainers[index] = { ...trainers[index], ...trainerData };
-//         await DataService.saveData(trainersPath, trainers);
-//         return trainers[index];
-//     }
-    
-
-//     static async deleteTrainer(trainerId) {
-//         const trainers = await this.getTrainers();
-//         const filteredTrainers = trainers.filter(trainer => trainer.id !== trainerId);
-//         await DataService.saveData(trainersPath, filteredTrainers);
-//     }
-
-//     static async deleteAllTrainers() {
-//         await DataService.saveData(trainersPath, []);
-//     }
-// }

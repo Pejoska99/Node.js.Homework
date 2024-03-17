@@ -6,7 +6,8 @@
     "email": "alice.smith@example.com",
     "isCurrentlyTeaching": true,
     "timeEmployed": "1 year",
-    "coursesFinished": 3
+    "coursesFinished": 7,
+    "updatedAt": "2024-03-17T20:35:56.673Z"
   },
   {
     "id": "e76d92ad-2b6a-4a81-8949-5475af723385",
@@ -15,7 +16,7 @@
     "email": "john.doe@example.com",
     "isCurrentlyTeaching": false,
     "timeEmployed": "2 years",
-    "coursesFinished": 5
+    "updatedAt": "2024-03-17T20:33:30.919Z"
   },
   {
     "id": "83230cb7-0ba9-426c-8c20-42c7f95466d2",
@@ -88,5 +89,15 @@
     "isCurrentlyTeaching": true,
     "timeEmployed": "9 months",
     "coursesFinished": 10
+  },
+  {
+    "id": "3878b733-8934-4486-bb3e-e284862eab19",
+    "firstName": "Al",
+    "lastName": "Sm",
+    "email": "alth@test.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "4 year",
+    "coursesFinished": 7,
+    "createdAt": "2024-03-17T20:30:32.991Z"
   }
 ]

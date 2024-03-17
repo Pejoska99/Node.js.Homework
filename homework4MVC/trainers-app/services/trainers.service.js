@@ -18,22 +18,60 @@ export default class TrainersService {
         return trainers;
     }
 
-    static async addTrainer(newTrainerData) {
-        return await TrainerModel.addTrainer(newTrainerData);
-    }
+    static async addTrainer(body) {
+        const trainer  = {
+            id: uuidv4(),
+            ...body,
+            createdAt: new Date().toISOString()
+        }
+        return await TrainerModel.addTrainer(trainer);
+        
+            
+
+        }
+    
 
     static async getTrainerById(trainerId) {
-        return await TrainerModel.getTrainerById(trainerId);
+        const trainer = await TrainerModel.getTrainerById(trainerId);
+        if (!trainer) {
+            throw new Error("Trainer not found");
+        }
+        return trainer;
     }
 
-    static async updateTrainer(trainerId, trainerData) {
-        return await TrainerModel.updateTrainer(trainerId, trainerData);
+    static async updateTrainer(trainerId, body) {
+        const trainer = await TrainerModel.getTrainerById(trainerId);
+        if (!trainer) {
+            throw new Error("Trainer not found");
+        }
+        
+        const updatedTrainer = {
+            ...body,
+            ...trainerId,
+            updatedAt: new Date().toISOString()
+        };
+        
+        return await TrainerModel.updateTrainer(trainerId, updatedTrainer);
     }
+    
+
 
     static async updateTrainerCoursesFinished(trainerId, coursesFinished) {
-        return await TrainerModel.updateTrainerCoursesFinished(trainerId, coursesFinished);
+        const trainer = await TrainerModel.getTrainerById(trainerId);
+        if (!trainer) {
+            throw new Error(`Trainer with ID ${trainerId} not found.`);
+        }
 
+        const updatedTrainer = {
+            ...trainer,
+            coursesFinished,
+           
+            updatedAt: new Date().toISOString()
+        };
+
+        return await TrainerModel.updateTrainer(trainerId, updatedTrainer);
     }
+
 
     static async deleteTrainer(trainerId) {
         await TrainerModel.deleteTrainer(trainerId);
