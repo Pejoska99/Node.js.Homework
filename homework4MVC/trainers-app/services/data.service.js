@@ -12,11 +12,13 @@ export default class DataService {
 
     static async saveData(filePath, data) {
         try {
-            await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
+            const jsonTrainers = JSON.stringify(data, null, 2 );
+            await fs.writeFile(filePath, jsonTrainers, 'utf-8');
         } catch (error) {
             throw new Error(`Failed to save data to ${filePath}: ${error.message}`);
         }
     }
 }
+
 
 

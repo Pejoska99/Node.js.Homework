@@ -1,24 +1,5 @@
 [
   {
-    "id": "b1157d16-c4f6-4922-8582-03b0d2764438",
-    "firstName": "Alice",
-    "lastName": "Smith",
-    "email": "alice.smith@example.com",
-    "isCurrentlyTeaching": true,
-    "timeEmployed": "10 months",
-    "coursesFinished": 2,
-   
-  },
-  {
-    "id": "e76d92ad-2b6a-4a81-8949-5475af723385",
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
-    "isCurrentlyTeaching": false,
-    "timeEmployed": "2 years",
-    "updatedAt": "2024-03-17T20:33:30.919Z"
-  },
-  {
     "id": "83230cb7-0ba9-426c-8c20-42c7f95466d2",
     "firstName": "Sime",
     "lastName": "Pejoski",
@@ -28,22 +9,14 @@
     "coursesFinished": 6
   },
   {
-    "id": "7523b33c-eff0-405f-a646-cf0d0d2647ec",
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "email": "jane.doe@example.com",
-    "isCurrentlyTeaching": true,
-    "timeEmployed": "8 months",
-    "coursesFinished": 4
-  },
-  {
     "id": "d4cb95c9-b89d-47fc-b8f5-7f94418a4c53",
-    "firstName": "Emily",
-    "lastName": "Brown",
-    "email": "emily@example.com",
+    "firstName": "EmilyUpdetet",
+    "lastName": "BrownUpdated",
+    "email": "emily@test.com",
     "isCurrentlyTeaching": true,
     "timeEmployed": "10 months",
-    "coursesFinished": 7
+    "coursesFinished": "1 year 6 months",
+    "updatedAt": "2024-03-18T09:00:07.700Z"
   },
   {
     "id": "a1911fe3-ebc2-4e7c-9c59-4d16de06fe1f",
@@ -100,5 +73,15 @@
     "timeEmployed": "2 year",
     "coursesFinished": 14,
     "createdAt": "2024-03-17T21:10:41.461Z"
+  },
+  {
+    "id": "15b8ee11-f78f-4dd1-8d84-1f378173d0f4",
+    "firstName": "Miller",
+    "lastName": "Sofija",
+    "email": "sophia@example.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "7 months",
+    "coursesFinished": 1,
+    "createdAt": "2024-03-18T08:33:57.925Z"
   }
 ]

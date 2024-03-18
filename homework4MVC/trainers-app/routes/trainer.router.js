@@ -14,4 +14,6 @@ router.delete('/trainers', TrainerController.deleteAllTrainers);
 router.patch('/trainers/:id/updateTrainerCoursesFinished', TrainerController.updateTrainerCoursesFinished);
 
 
+
+
 export default router;

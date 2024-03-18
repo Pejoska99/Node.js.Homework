@@ -18,10 +18,10 @@ export default class TrainersService {
         return trainers;
     }
 
-    static async addTrainer(body) {
+    static async addTrainer(newTrainerData) {
         const trainer  = {
             id: uuidv4(),
-            ...body,
+            ...newTrainerData,
             createdAt: new Date().toISOString()
         }
         return await TrainerModel.addTrainer(trainer);
@@ -29,8 +29,6 @@ export default class TrainersService {
             
 
         }
-    
-
     static async getTrainerById(trainerId) {
         const trainer = await TrainerModel.getTrainerById(trainerId);
         if (!trainer) {
@@ -47,7 +45,7 @@ export default class TrainersService {
         
         const updatedTrainer = {
             ...body,
-            ...trainerId,
+            id:trainerId,
             updatedAt: new Date().toISOString()
         };
         
