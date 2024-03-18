@@ -1,6 +1,4 @@
 import TrainersService from '../services/trainers.service.js';
-import path from 'path';
-
 
 export default class TrainerController {
     static async getTrainers(req, res) {

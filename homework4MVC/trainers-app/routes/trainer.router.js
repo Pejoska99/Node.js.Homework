@@ -1,11 +1,6 @@
 import { Router } from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import express  from 'express';
 import TrainerController from '../controllers/trainers.controller.js';
-
-
-
 
 const router = Router();
 
@@ -17,12 +12,8 @@ router.delete('/trainers/:id', TrainerController.deleteTrainer);
 router.delete('/trainers', TrainerController.deleteAllTrainers);
 router.patch('/trainers/:id/updateTrainerCoursesFinished', TrainerController.updateTrainerCoursesFinished);
 
-// router.get("/public", express.static("public"));
 router.get("/home", express.static("public"));
 router.get("/home/image.jpeg", express.static("public"));
-
-
-
 
 
 export default router;
