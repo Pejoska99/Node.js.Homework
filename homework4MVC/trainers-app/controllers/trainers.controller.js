@@ -1,4 +1,5 @@
 import TrainersService from '../services/trainers.service.js';
+import path from 'path';
 
 
 export default class TrainerController {
@@ -76,6 +77,6 @@ export default class TrainerController {
         }
      }
 
-    
+
 
     }
