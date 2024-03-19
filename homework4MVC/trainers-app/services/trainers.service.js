@@ -78,4 +78,6 @@ export default class TrainersService {
     static async deleteAllTrainers() {
         await TrainerModel.deleteAllTrainers();
     }
+
+    
 }

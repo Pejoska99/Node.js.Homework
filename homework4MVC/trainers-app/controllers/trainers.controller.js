@@ -1,4 +1,5 @@
 import TrainersService from '../services/trainers.service.js';
+import TrainerModel from '../models/trainers.model.js';
 
 export default class TrainerController {
     static async getTrainers(req, res) {
@@ -36,15 +37,38 @@ export default class TrainerController {
         }
      }
 
-     static async updateTrainer(req, res) {
+    //  static async updateTrainer(req, res) {
+    //     const trainerId = req.params.id;
+    //     try {
+    //         const trainer = await TrainersModel.updateTrainer(trainerId, req.body);
+    //         res.json(updatedTrainer);
+    //     } catch (error) {
+    //         res.status(404).send(error.message);
+    //     }
+    //  }
+
+    static async updateTrainer(req,res){
         const trainerId = req.params.id;
-        try {
-            const updatedTrainer = await TrainersService.updateTrainer(trainerId, req.body);
-            res.json(updatedTrainer);
-        } catch (error) {
-            res.status(404).send(error.message);
+        try{
+            const trainer = await TrainerModel.getTrainerById(trainerId);
+            if(!trainer){
+                res.status(404).send('Trainer not found');
+                return;
+            }
+
+            trainer.setName(req.body.name);
+            trainer.setAge(req.body.age);
+
+            await TrainerModel.updateTrainer(trainerId,{
+                name:req.body.name,
+                age:   req.body.age,
+
+            });
+            res.json(trainer);
+        }catch(error){
+            res.status(500).send(error.message);
         }
-     }
+    }
       static async updateTrainerCoursesFinished(req, res) {
         const trainerId = req.params.id;
         const coursesFinished = req.body.coursesFinished;
