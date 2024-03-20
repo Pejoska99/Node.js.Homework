@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { v4 as uuidv4 } from "uuid";
 
+
 const currentFileUrl = import.meta.url;
 const currentFilePath = fileURLToPath(currentFileUrl); 
 const filePathDirectory = path.dirname(currentFilePath); 
@@ -16,7 +17,8 @@ const trainersPath = path.join(
 
 export default class TrainerModel {
     static async getAllTrainers() {
-        console.log("Getting all trainers from model...");
+        console.log("Getting all trainers from model");
+
         return await DataService.readData(trainersPath);
     }
 
@@ -71,7 +73,7 @@ export default class TrainerModel {
 }
 export class Trainer {
     constructor(newTrainerData) {
-      this.id = newTrainerData.id;
+      this.id = newTrainerData.id || uuidv4();
       this.firstName = newTrainerData.firstName;
       this.lastName = newTrainerData.lastName;
       this.email = newTrainerData.email;

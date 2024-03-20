@@ -1,10 +1,8 @@
-
 import TrainerModel from "../models/trainers.model.js";
 import { Trainer } from "../models/trainers.model.js";
 
+export default class TrainerService {
 
-
-export default class TrainersService {
     static async getAllTrainers(queryData) {
         console.log("Getting all trainers from service...");
         let trainers = await TrainerModel.getAllTrainers();
