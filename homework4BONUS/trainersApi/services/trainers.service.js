@@ -20,6 +20,7 @@ export default class TrainerService {
     }
 
     static async addTrainer(trainerData) {
+        
         const newTrainer = new Trainer(trainerData);
         await TrainerModel.addTrainer(newTrainer);
         return newTrainer;
@@ -33,13 +34,29 @@ export default class TrainerService {
         return trainer;
     }
 
-    static async updateTrainer(trainerId, body) {
-        const updatedTrainer = new Trainer(body);
-        updatedTrainer.id = trainerId; 
-        updatedTrainer.updatedAt = new Date().toISOString();
+    // static async updateTrainer(trainerId, body) {
 
-        await TrainerModel.updateTrainer(trainerId, updatedTrainer);
+    //     const updatedTrainer = new Trainer(body);
+    //     updatedTrainer.id = trainerId; 
+    //     updatedTrainer.updatedAt = new Date().toISOString();
+
+    //     await TrainerModel.updateTrainer(trainerId, updatedTrainer);
+    //     return updatedTrainer;
+    // }
+
+    static async updateTrainer(trainerId, body) {
+        const updatedTrainerData = {
+            ...body,
+            updatedAt: new Date().toISOString()
+        }
+        const updatedTrainer = new Trainer(updatedTrainerData);
+        updatedTrainer.id = trainerId;
+
+        await TrainerModel.updateTrainer(trainerId, updatedTrainerData);
         return updatedTrainer;
+
+
+        
     }
 
     static async updateTrainerCoursesFinished(trainerId, coursesFinished) {
