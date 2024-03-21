@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 
-import router from './routes_new/trainer.router.js';
+import router from './routes_new/router.js';
 
 const currentFileUrl = import.meta.url;
 const currentFilePath = fileURLToPath(currentFileUrl);
