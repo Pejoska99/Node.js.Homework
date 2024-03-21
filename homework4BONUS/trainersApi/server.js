@@ -2,7 +2,6 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-
 import router from './routes_new/router.js';
 
 const currentFileUrl = import.meta.url;
@@ -11,10 +10,10 @@ const projectPath = path.dirname(currentFilePath);
 
 const staticPagePublic = path.join(projectPath, "public");
 
-const app = express();
+
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || "0.0.0.0";
-
+const app = express();
 app.use(express.json());
 app.use(express.static(path.join(staticPagePublic, 'public')));
 
