@@ -1,33 +1,27 @@
 [
-    {
-      "id": "1",
-      "email": "john@example.com",
-      "password": "hashed_password",
-      "role": "Admin"
-    },
-    {
-      "id": "2",
-      "email": "emma@example.com",
-      "password": "hashed_password",
-      "role": "Standard"
-    },
-    {
-      "id": "3",
-      "email": "alex@example.com",
-      "password": "hashed_password",
-      "role": "Standard"
-    },
-    {
-      "id": "4",
-      "email": "sarah@example.com",
-      "password": "hashed_password",
-      "role": "Standard"
-    },
-    {
-      "id": "5",
-      "email": "michael@example.com",
-      "password": "hashed_password",
-      "role": "Standard"
-    }
-  ]
   
+  {
+    "id": "c2e2054e-7cc4-4dec-9d5b-19fbce94d5ef",
+    "email": "нов@корисник.com",
+    "password": "$2b$10$Alp8bSK6pqrC3dcfa6rBO.kCA391vKM1MXZlhWvwIz6Os2G1cybFW",
+    "role": "admin"
+  },
+  {
+    "id": "0acec590-eee5-4765-ae4b-494efd7c857e",
+    "email": "biljana@test.com",
+    "password": "$2b$10$q22ckEt.7vRUwgdgUWFKSOsLhewnL7MrMBnbxX3M0mRfY7c5jiVky",
+    "role": "admin"
+  },
+  {
+    "id": "6fc6bb19-b816-4dd0-988d-bfe51b15ce08",
+    "email": "biljana@testл.com",
+    "password": "$2b$10$9M65nsMMW1S1rMFwwVd/GOCZnzX4GX1Ynrro4mVL2VrmA5HqeLrU6",
+    "role": "admin"
+  },
+  {
+    "id": "64ab7f6c-cec4-401c-b59c-af876e2117ea",
+    "email": "emma@test.com",
+    "password": "$2b$10$KaGoKEGjRgxu7GQ4/TUvYeUGQ/xKCKpamL/N1XyEkRvVY8DQA3jpG",
+    "role": "user"
+  }
+]

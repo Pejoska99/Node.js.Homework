@@ -40,7 +40,7 @@ export default class AuthModel {
         
     }
 
-    static async loginUSer(credentials) {
+    static async loginUser(credentials) {
         const users = await this.getAll();
         const {email, password} = credentials;
         const foundUser = users.find((user)=> user.email === email);
