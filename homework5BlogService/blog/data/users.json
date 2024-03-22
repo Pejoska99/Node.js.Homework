@@ -1,0 +1,33 @@
+[
+    {
+      "id": "1",
+      "email": "john@example.com",
+      "password": "hashed_password",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "email": "emma@example.com",
+      "password": "hashed_password",
+      "role": "Standard"
+    },
+    {
+      "id": "3",
+      "email": "alex@example.com",
+      "password": "hashed_password",
+      "role": "Standard"
+    },
+    {
+      "id": "4",
+      "email": "sarah@example.com",
+      "password": "hashed_password",
+      "role": "Standard"
+    },
+    {
+      "id": "5",
+      "email": "michael@example.com",
+      "password": "hashed_password",
+      "role": "Standard"
+    }
+  ]
+  

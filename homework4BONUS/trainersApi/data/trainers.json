@@ -73,5 +73,14 @@
     "isCurrentlyTeaching": false,
     "timeEmployed": "2 years",
     "coursesFinished": "4"
+  },
+  {
+    "id": "5868f51f-fe33-47ec-8111-d34936ccea91",
+    "firstName": "Sime",
+    "lastName": "Pea",
+    "email": "bsi@pej.com",
+    "isCurrentlyTeaching": true,
+    "timeEmployed": "8 year",
+    "coursesFinished": "7"
   }
 ]
