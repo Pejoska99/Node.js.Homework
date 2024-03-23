@@ -39,5 +39,13 @@
       "film",
       "top 10"
     ]
+  },
+  {
+    "id": "782b6a21-9d99-4e49-9d7a-c578086baf00",
+    "title": "New Post",
+    "tags": [
+      "newtag1",
+      "tag2"
+    ]
   }
 ]

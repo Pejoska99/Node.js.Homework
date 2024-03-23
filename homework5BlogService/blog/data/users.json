@@ -1,5 +1,4 @@
 [
-  
   {
     "id": "c2e2054e-7cc4-4dec-9d5b-19fbce94d5ef",
     "email": "нов@корисник.com",
@@ -16,7 +15,10 @@
     "id": "6fc6bb19-b816-4dd0-988d-bfe51b15ce08",
     "email": "biljana@testл.com",
     "password": "$2b$10$9M65nsMMW1S1rMFwwVd/GOCZnzX4GX1Ynrro4mVL2VrmA5HqeLrU6",
-    "role": "admin"
+    "role": "admin",
+    "refreshToken": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ZmM2YmIxOS1iODE2LTRkZDAtOTg4ZC1iZmU1MWIxNWNlMDgiLCJpYXQiOjE3MTEyMDkzMTgsImV4cCI6MTcxMTgxNDExOH0.ShTNVqHSfPpUDFvarOmQdCm8LSMlt3SbOdjPIzdoMRk"
+    ]
   },
   {
     "id": "64ab7f6c-cec4-401c-b59c-af876e2117ea",
