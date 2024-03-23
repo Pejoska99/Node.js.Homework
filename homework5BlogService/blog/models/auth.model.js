@@ -56,5 +56,46 @@ export default class AuthModel {
         const { password: hashedPassword, ...userWithoutPassword } = foundUser;
         return userWithoutPassword;
     }
+
+    static async saveRefereshToken(userId, refreshToken) {
+        const users = await this.getAll();
+
+        const updatedUsers = users.map((user) => {
+            if (user.id === userId) {
+                if (!user.refreshToken) {
+                    user.refreshToken = [];
+        }
+        
+        user.refreshToken.push(refreshToken);
+        console.log(user.refreshToken);
+        return user;
+    }
+    return user;
+        
+    });
+        
+   await DataService.writeData(usersPath, updatedUsers); 
 }
 
+static async deleteRefreshToken(userId, refreshToken) {
+    const users = await this.getAll();
+
+    const updatedUsers = users.map((user) => {
+        
+        if (user.id === userId) {
+            user.refreshToken = user.refreshToken.filter((token) => {
+                if(token !== refreshToken) return true ;
+                 return false ;   
+                });
+            
+            return user;
+        }
+        return user;
+
+    });
+    await DataService.writeData(usersPath, updatedUsers);
+    
+}
+
+
+}
