@@ -10,8 +10,10 @@ const postsPath = path.join(filePathDirectory, "..", "data", "posts.json");
 
 export default class PostModel {
     static async getAll() {
+        
       return await DataService.readData(postsPath);
     }
+    
 
     static async getById(id) {
       const posts = await DataService.readData(postsPath);

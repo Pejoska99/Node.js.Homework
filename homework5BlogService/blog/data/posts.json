@@ -1,24 +1,14 @@
 [
   {
     "id": "2",
-    "title": "Top 10 Health Benefits of Regular Exercise updated",
-    "body": "Regular exercise is essential for maintaining good health. In this article, we explore the top 10 health benefits of incorporating regular exercise into your lifestyle.",
+    "title": "Top 10 Health Benefits of Regular Exercise new update",
+    "body": "Regular exercise is essential for maintaining good health. In this article, we explore the top 10 health benefits of incorporating regular exercise into your lifestyle.new update",
     "tags": [
       "fitness",
       "health",
       "exercise"
     ],
-    "updatedAt": "2024-03-22T20:22:23.795Z"
-  },
-  {
-    "id": "3",
-    "title": "Top 10 Destinations to Visit in 2024",
-    "body": "Planning your next vacation? Discover the top 10 destinations to visit in 2024 for an unforgettable travel experience.",
-    "tags": [
-      "travel",
-      "destinations",
-      "top 10"
-    ]
+    "updatedAt": "2024-03-24T08:14:22.105Z"
   },
   {
     "id": "4",
@@ -46,6 +36,26 @@
     "tags": [
       "newtag1",
       "tag2"
+    ]
+  },
+  {
+    "id": "da611949-75c5-456f-b321-771ffb9a1406",
+    "title": "Top 10 Destinations to Visit in 2024 - created new one",
+    "body": "Created new post.",
+    "tags": [
+      "vacation",
+      "summer",
+      "family trips"
+    ]
+  },
+  {
+    "id": "8ea6f099-032f-45a2-97bb-1b2c0f28c770",
+    "title": "Top 10 Destinations to Visit in 2024 - created new one",
+    "body": "Created new post.",
+    "tags": [
+      "vacation",
+      "summer",
+      "family trips"
     ]
   }
 ]

@@ -1,29 +1,20 @@
 [
   {
-    "id": "c2e2054e-7cc4-4dec-9d5b-19fbce94d5ef",
-    "email": "нов@корисник.com",
-    "password": "$2b$10$Alp8bSK6pqrC3dcfa6rBO.kCA391vKM1MXZlhWvwIz6Os2G1cybFW",
-    "role": "admin"
-  },
-  {
-    "id": "0acec590-eee5-4765-ae4b-494efd7c857e",
+    "id": "203f5aa3-a122-42bd-8cfd-09c81be97c4b",
     "email": "biljana@test.com",
-    "password": "$2b$10$q22ckEt.7vRUwgdgUWFKSOsLhewnL7MrMBnbxX3M0mRfY7c5jiVky",
-    "role": "admin"
-  },
-  {
-    "id": "6fc6bb19-b816-4dd0-988d-bfe51b15ce08",
-    "email": "biljana@testл.com",
-    "password": "$2b$10$9M65nsMMW1S1rMFwwVd/GOCZnzX4GX1Ynrro4mVL2VrmA5HqeLrU6",
+    "password": "$2b$10$XwbrrZkZPoGYeh0EPIXW3eiqx16B3Irjr9qyqmip9avZ.8NhI/EtS",
     "role": "admin",
     "refreshToken": [
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ZmM2YmIxOS1iODE2LTRkZDAtOTg4ZC1iZmU1MWIxNWNlMDgiLCJpYXQiOjE3MTEyMDkzMTgsImV4cCI6MTcxMTgxNDExOH0.ShTNVqHSfPpUDFvarOmQdCm8LSMlt3SbOdjPIzdoMRk"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMDNmNWFhMy1hMTIyLTQyYmQtOGNmZC0wOWM4MWJlOTdjNGIiLCJpYXQiOjE3MTEyNjc0MDQsImV4cCI6MTcxMTg3MjIwNH0.fkE7cbvyzWa3Dc1aOeVBGPZ6T6E2fszy0NHVuaBl0L8"
     ]
   },
   {
-    "id": "64ab7f6c-cec4-401c-b59c-af876e2117ea",
-    "email": "emma@test.com",
-    "password": "$2b$10$KaGoKEGjRgxu7GQ4/TUvYeUGQ/xKCKpamL/N1XyEkRvVY8DQA3jpG",
-    "role": "user"
+    "id": "8a7f7680-7744-4ba0-a318-504df329a556",
+    "email": "newuser@test.com",
+    "password": "$2b$10$Aw/lWk6J0eGF.9FQyNIdnuSsPhrXa8CP33go7lSARUcfok/ESxub2",
+    "role": "user",
+    "refreshToken": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4YTdmNzY4MC03NzQ0LTRiYTAtYTMxOC01MDRkZjMyOWE1NTYiLCJpYXQiOjE3MTEyNjg0ODUsImV4cCI6MTcxMTg3MzI4NX0.c-1zVZSBjq6WAswngbYkNx8HUNuD_SJTNPR5cc5v6KA"
+    ]
   }
 ]
