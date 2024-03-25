@@ -65,7 +65,7 @@ export default class AuthController {
             return res.sendStatus(403);
           }
     
-          if (!foundUser.refreshTokens.some((token) => token === refreshToken)) {
+          if (!foundUser.refreshToken.some((token) => token === refreshToken)) {
             return res.sendStatus(403);
           }
           const accessToken = createAccessToken(foundUser.id);
@@ -73,10 +73,9 @@ export default class AuthController {
           
           const newRefreshToken = createRefreshToken(foundUser.id);
     
-         
           await AuthModel.deleteRefreshToken(foundUser.id, refreshToken);
     
-         
+        
           await AuthModel.saveRefereshToken(foundUser.id, newRefreshToken);
     
           //4. Send new refresh token to client

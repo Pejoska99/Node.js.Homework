@@ -8,4 +8,5 @@ const router = Router();
 router.use(authRouter);
 router.use("/posts", tokenValidator, postRouter);
 
+
 export default router
