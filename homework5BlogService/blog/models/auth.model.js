@@ -52,7 +52,7 @@ export default class AuthModel {
             
             throw new Error ("Invalid credentials");
         }
-
+//delete.foundUser.password
         const { password: hashedPassword, ...userWithoutPassword } = foundUser;
         return userWithoutPassword;
     }
